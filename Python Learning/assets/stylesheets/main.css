@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* 
+    From MDN
+    The box-sizing css property sets how the total width
+    and height of an element is calculated
+
+        border-box: Tells the browser to account for any
+        border and padding in the values you specify for
+        an element's width and height. If you set an 
+        element's width to 100px, that 100px will include
+        any border or padding you added, and the content
+        box will shrink to absorb that extra width. Th
+    */
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    /* 
+    From MDN:
+        The font-weight CSS property sets the weight (or boldness)
+        of the font. The weights available depend on the 
+        font-family that is currently set.
+    */
+    font-size: 16px;
+    line-height:1.7;
+    /* 
+    From MDN
+        The line-height CSS property sets the height of a line box.
+        It's commonly used to set the distance between lines of text.
+        On block-level elements, it specifies the minimum height of line
+        boxes within the element. On non-replaced inline elements, it
+        specifies the height that is used to calculate line box height
+    */
+    color: rgb(119, 101, 85);
+    padding:30px;
+    /* 
+    From MDN
+        The padding CSS shorthand property sets the padding area
+        on all four sides of an element at once
+    */
+}
+
+.header {
+    background-image: 
+        linear-gradient(
+            to right bottom,
+            #7ed56f09,
+            #28b87552
+        ),
+        url(../imgs/IMG_0008.JPG);
+        /* 
+        From MDN
+            The background-image CSS property sets one or more
+            background images on an element.
+        value: url()
+            The url() CSS function is used to include a file. The 
+            parameter is an absolute URL, a relative URL, a blob URL,
+            or a data URL. The url() function can be passed as a paramter
+            of another CSS functions. Depending on the property for which
+            it is a value, the resource sought can be an image, font, or
+            a stylesheet. the url() functional notation is the value for 
+            <url> data type.
+        */
+    /* border: 5px solid black; */
+    height: 95vh;
+    /* 
+    From MDN
+        The height CSS property specifies the height of an element.
+        By default, the property defines the height of the 
+        content area. If box-sizing is set to border-box, however,
+        it insteads determines the height of the border area.
+    
+    From MDN
+        The viewport which is the visible area of your page in the
+        browser you are using to view a site also has a size. In
+        CSS we have units which relate to the size of the viewport
+        the vw unit viewport width,and vh for viewport height. Using
+        these units you can size something relative to the viewport
+        of the user. 1vh is equal to 1% of the viewport height, and
+        1 vw is equal to 1% of the viewport width.
+    */
+
+    /* background-size: cover; */
+    /* 
+    From MDN
+        The background-size CSS property sets the size of the element's 
+        background-image. The image can be left to its natual size, 
+        stretched, or contrained to fit the available space.
+
+    Value: cover
+        Scales the image (while perserveing its ratio) to the smallest possible
+        size to fill the container (that is: both its height and width
+        completely cover the container), leaving no empty space, If the 
+        proportions of the background differ from the element, the image
+        cropped either vertically or horizontally.
+    */
+
+    background-position: top;
+    /* 
+    From MDN
+        The background-position CSS property sets the initial position for
+        each background image. the position is relative to the position layer
+        set by background-origin.
+    value: top
+        This specifies an edge against which to place the item. The other
+        diemension is then set to 50%, to the item is placed in the middle 
+        of the edge specified.
+    */
+
+    clip-path: polygon(0 0, 75% 0, 100% 50vh, 75% 100%, 0% 100%);
+    /* 
+    From bennettfeely
+        The clip-path property allows you to make complex shapes in CSS by
+        clipping an element to a basic shape, or to an SVG source.
+    */
+
+
+
+}
