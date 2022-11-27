@@ -111,13 +111,75 @@ body {
         of the edge specified.
     */
 
-    clip-path: polygon(0 0, 75% 0, 100% 50vh, 75% 100%, 0% 100%);
+    /* clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
     /* 
     From bennettfeely
         The clip-path property allows you to make complex shapes in CSS by
         clipping an element to a basic shape, or to an SVG source.
     */
-
-
-
 }
+
+.header2 {
+    background-image: 
+    linear-gradient(
+        to right bottom,
+        #7ed56f09,
+        #28b87552
+    ),
+    url(../imgs/IMG_0008.JPG);
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+    /* clip-path: polygon(0% 0%, 100% 0, 100% 100vh, 25% 100%, 0% 50%);  */
+    margin-top: 20px;
+    position: relative;
+    /* 
+    from MDN
+        The position CSS property sets how an element is positioned
+        in a document. The top, right, bottom, and left properties
+        determine the final location of positioned elements
+    value: relative
+        The element is positioned according to the normal flow of 
+        the document, and then offset relative to itself based on the 
+        values of top, right, bottom, and left. The offset does not
+        affect the position of any other elements; thus, the given for 
+        the element in the page layout is the same as if position were
+        static.
+    */
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.textbox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+    .heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    }
+
+    .heading-primary-sub {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 17.4px;
+    }
