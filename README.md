@@ -11,6 +11,7 @@
 
 | #XX | Project Name                                          | Live Demo | Languages |
 | --- | ------------------------------------------------------| --------- | --------- |
+| #1  | Build a Tribute Page                                  | [Site]()  | HTML/CSS  |
 | #1  | Workit landing page                                   | [Site]()  | HTML/CSS  |
 | #1  | Results summary component                             | [Site]()  | HTML/CSS  |
 | #1  | Product preview card component                        | [Site]()  | HTML/CSS  |
